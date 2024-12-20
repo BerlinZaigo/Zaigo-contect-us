@@ -11,9 +11,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import com.github.javafaker.Faker;
-
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Contact_Us {
@@ -69,7 +67,7 @@ public class Contact_Us {
 			} catch (ElementClickInterceptedException e) {
 				js.executeScript("window.scrollBy(0, 200);");
 			}
-		} while (!clicked); // Repeat until the element is clicked
+		} while (!clicked);
 
 		wait.until(ExpectedConditions.urlContains("thank-you"));
 
